@@ -1,5 +1,6 @@
 package com.fsoft.config;
 
+import com.fsoft.security.config.WebSecurityConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -10,7 +11,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-                PersistenceJPAConfig.class
+                PersistenceJPAConfig.class, WebSecurityConfig.class
         };
     }
 
