@@ -9,5 +9,6 @@
     <title>Home</title>
 </head>
 <body>
+<core:import url="/WEB-INF/views/user/layouts/header.jsp"/>
 </body>
 </html>
